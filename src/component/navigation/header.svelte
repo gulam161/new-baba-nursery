@@ -1,14 +1,15 @@
 <script lang="ts">
-	
 	let menuItems = ['Bonsais', 'Evergreen', 'Climbing', 'More'];
 </script>
 
-<nav class="w-full rounded-full bg-white shadow">
-	<div class="mx-auto flex h-16 w-3xl items-center justify-between pr-5">
+<nav class="fixed top-0 left-0 z-50 w-full bg-inherit">
+	<div
+		class="mx-auto mt-8 flex h-18 w-auto items-center justify-between rounded-full bg-white pr-5 shadow md:w-3xl"
+	>
 		<!-- Logo -->
 		<a href="/" class="flex items-center space-x-1">
 			<img src="/logo/new-baba-nursary.png" alt="Plant Life Logo" class="h-15 w-auto" />
-			<span class="text-xl font-bold">
+			<span class="text-xl font-bold max-[440px]:hidden">
 				<span class="text-[#9ca067]">Plant</span> Life
 			</span>
 		</a>
@@ -75,9 +76,8 @@
 							d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 5.4a1 1 0 0 0 .98 1.2h11.74a1 1 0 0 0 .98-1.2L17 13M7 13H3m4 0a4 4 0 1 0 8 0"
 						/>
 					</svg>
-					
 				</button>
-				<span class="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-green-500"></span>
+				<span class="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-[#9ca067]"></span>
 			</div>
 		</div>
 	</div>
