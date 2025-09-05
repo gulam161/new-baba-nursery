@@ -1,3 +1,7 @@
+<script lang="ts">
+	import TopCategories from './top-categories.svelte';
+</script>
+
 <section
 	class="relative flex h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center"
 	style="background-image: url('/landing-homepage-image.jpg');"
@@ -45,9 +49,7 @@
 </div>
 
 <!-- About Nursery Plant -->
-<section
-	class="flex flex-col items-center justify-center gap-8 bg-white px-6 py-12 md:flex-row md:py-20"
->
+<section class="flex flex-col items-center justify-evenly bg-white px-6 py-12 md:flex-row md:py-20">
 	<!-- Left Content -->
 	<div class="max-w-md text-left md:text-center">
 		<div class="mx-auto w-fit rounded-full bg-[#f7f7f7]">
@@ -66,24 +68,33 @@
 	</div>
 
 	<!-- Right Images -->
-	<div class="relative flex max-w-md items-center justify-center">
+	<div class="relative flex max-w-md items-center justify-start">
 		<div class="relative rounded-full bg-[#f7f7f7]">
 			<img
-				src="/products/top-view-succulent-echeveria-agavoides.png"
-				alt="top-view-succulent"
-				class="relative z-10 w-48 md:w-64"
-			/>
-			<!-- <img
-				src="/products/White-pot-leaf.jpg"
+				src="/products/White-pot-leaf.png"
 				alt="White-pot-leaf"
-				class="absolute top-0 right-0 z-20 w-12 md:w-60"
-			/> -->
+				class="relative z-20 w-48 md:w-64"
+			/>
+			<img
+				src="/products/leafy-frame-ecology-square.png"
+				alt="top-view-succulent"
+				class="absolute top-11 right-3 z-10 w-40 rotate-45 md:w-60"
+			/>
 		</div>
-		<!-- <img
-			src="/products/top-view-succulent-echeveria-agavoides.png"
-			alt="White-pot-leaf"
-			class="relative top-0 right-0 z-20 w-48 rounded-full md:w-20"
-		/> -->
-		<img src="" alt="Small Plant 2" class="absolute right-4 bottom-0 w-12 md:w-16" />
+		<div class="absolute top-6 left-52 z-20 w-48 rounded-full bg-stone-500/10 p-2.5 shadow md:w-18">
+			<img
+				src="/products/top-view-succulent-echeveria-agavoides.png"
+				alt="White-pot-leaf"
+				class="w-48 md:w-20"
+			/>
+		</div>
+		<img
+			src="/products/Hawthorn.png"
+			alt="Small Plant 2"
+			class="absolute bottom-0 left-58 w-20 rounded-full bg-stone-500/10 md:w-32"
+		/>
 	</div>
 </section>
+
+<!-- Top Categories -->
+<TopCategories />
